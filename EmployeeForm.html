@@ -1,0 +1,92 @@
+<html >
+<head>
+    <title>Employee Details</title>
+</head>
+<body style="background-color: rgb(239, 253, 248);">
+<center>
+   <form>
+     <h1 style="color: rgba(195, 199, 109, 0.978);"><ins>Employee Details</ins></h1>
+     <hr>
+     <marquee  direction="right" style="color: rgb(220, 33, 33);">Last day to fill Registration form 21/07/2023</marquee>
+       <table style="font-size: 15px; ">
+        <tr>
+            <td>Enter Id <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td><input type="text" placeholder="Employee Id" pattern="[JSP]{ }[0-9]{4}" title="starts with JSP and ends with 4 ditis" required></td>
+        </tr>
+        <tr>
+            <td>Enter Name <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td><input type="text" placeholder="Employee Name" pattern="[a-z]{}[  ]" required></td>
+        </tr>
+        <tr>
+            <td>Enter DOB <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td><input type="date" title="allow before 1-jan-2022" min="01-01-2015" max="01-01-2022" required></td>
+        </tr>
+        <tr>
+            <td>Enter Month/Year of joining <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td><input type="month" title="allow after march-1990 & before 2022-march"  min="1990-05" max="2022-05" required></td>
+        </tr>
+        <tr>
+            <td>Enter Email-Id <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td><input type="email" placeholder="Email" required></td>
+        </tr>
+        <tr>
+            <td>Enter No.of years of Experience <sup style="color: red;">*</sup></td> 
+            <td>:</td>
+            <td><input type="number" placeholder="Enter number" required></td>
+        </tr>
+        <tr>
+            <td >Choose language known</td>
+            <td>:</td>
+            <td> <input type="checkbox" required ><em>English</em> 
+                <input type="checkbox" required><em>Hindi</em> 
+                <input type="checkbox" ><em>Telugu</em>  
+                <input type="checkbox" ><em>Marati</em>
+            </td>
+        </tr>
+        <tr>
+            <td> <label name="surya" required>Select Gender</label> <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="surya"><Strong>Male</Strong>
+                <input type="radio" name="surya"><strong>Female</strong>
+                <input type="radio" name="surya"><strong>Others</strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Choose Designation <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td>
+                <input type="text" placeholder="Designation" list="surya" required>
+                <datalist id="surya">
+                    <option >Developer</option>
+                    <option >Testing</option>
+                    <option >Manager</option>
+                    <option >HR</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Address <sup style="color: red;">*</sup></td>
+            <td>:</td>
+            <td>
+                <address><input type="text" title="allow max-10 char" pattern="[A-Za-z .]{10,50}"  required></address>
+            </td>
+        </tr>
+        <center>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="submit" value="clear"></td>
+        </tr>
+       </center>
+        </table>
+    </form>
+</center>    
+</body>
+</html>
